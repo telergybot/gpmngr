@@ -260,10 +260,10 @@ Commands list :
 لیست مدیران
 
 !promote [username]
-ارتقاء شخصی
+مدیر کردن شخصی
 
 !demote [username]
-تنزیل درجه شخصی
+برکناری از مدیریت شخصی
 
 !kickme
 حذف خودتان از گروه
@@ -281,9 +281,10 @@ Commands list :
 قوانین گروه
 
 !id
-دریافت کد شخصی برای حذف و یا بان کردن
+دریافت آی دی گروه
 
 !help
+نمایش دستورات
 
 !lock [member|name|bots]
 قفل:اعضا/اسم گروه/روبات ها
@@ -319,33 +320,31 @@ Commands list :
 آمار پیام متنی کاربران
 
 !save [value] <text>
-Save <text> as [value]
+ذخیره متن مورد نظرتان
 
 !get [value]
-Returns text of [value]
+نمایش متن ذخیره شده شما
 
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+پاک کردن: مدیرها/قوانین/توضیحات
 
 !res [username]
-returns user id
+نمایش کد آی دی یک شخص
 "!res @username"
 
 !log
-will return group logs
+دتورات اجرایی مدیران
 
 !banlist
-will return group ban list
+نمایش لیست افراد بن شده
 
-**U can use both "/" and "!" 
+شما میتوانید برای اجرای دستورات از "/"و"!" استفادده کنید
 
+فقط صاحب گروه و مدیران میتوانند روبات هارو به گروه اضافه کنند
 
-*Only owner and mods can add bots in group
+*فقط مدیران میتوانند/نام گروه/توضیحات/لینک و غیره را تنظیم کنند
 
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
+*فقط صاحب گروه میتوند افرادی را:مدیر /برکناری از مدیریت/مدیر کل و ... کند
 
 ]]
 
