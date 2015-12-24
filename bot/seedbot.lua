@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '1.0'
+VERSION = '1.3'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -227,98 +227,96 @@ function create_config( )
     about_text = [[Teleseed v1
 An advance Administration bot based on yagop/telegram-bot 
 
-https://github.com/SEEDTEAM/TeleSeed
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@seyedan25 [Manager]
+ادمین
+@mr_flat 
 
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
 
-Our channels
-@teleseedch [English]
+با تشر ویژه از:
+Amir Dark
+<PockerFace/>
+<Mehrab_Wj/>
+Dawsh_Alfred
+
+کانال ما:
+@ch320 [فارسی]
 ]],
     help_text = [[
 Commands list :
 
 !kick [username|id]
-You can also do it by reply
+شما میتوانید با ریپلای کردن پیام فرد این کار را انجام دهید
 
 !ban [ username|id]
-You can also do it by reply
+شما میتوانید با ریپلای کردن پیام فرد این کار را انجام دهید
 
 !unban [id]
-You can also do it by reply
+شما میتوانید با ریپلای کردن پیام فرد این کار را انجام دهید
 
 !who
-Members list
+لیست کاربران
 
 !modlist
-Moderators list
+لیست مدیران
 
 !promote [username]
-Promote someone
+ارتقاء شخصی
 
 !demote [username]
-Demote someone
+تنزیل درجه شخصی
 
 !kickme
-Will kick user
+حذف خودتان از گروه
 
 !about
-Group description
+توضیحات گروه
 
 !setphoto
-Set and locks group photo
+تنظیم عکس گروه
 
 !setname [name]
-Set group name
+تنظیم اسم گروه
 
 !rules
-Group rules
+قوانین گروه
 
 !id
-return group id or user id
+دریافت کد شخصی برای حذف و یا بان کردن
 
 !help
 
 !lock [member|name|bots]
-Locks [member|name|bots] 
+قفل:اعضا/اسم گروه/روبات ها
 
 !unlock [member|name|photo|bots]
-Unlocks [member|name|photo|bots]
+بازکردن قفل: اعضا/اسم گروه/روبات ها
 
-!set rules <text>
-Set <text> as rules
+!set rules <متن>
+ تنظیم <متن> به عنوان قوانین گروه
 
 !set about <text>
-Set <text> as about
+تنظیم <متن> به عنوان توضیحات گروه
 
 !settings
-Returns group settings
+مشاهده تنظیمات گروه
 
 !newlink
-create/revoke your group link
+ساخت/عوض کردن لینک گروه شما
 
 !link
-returns group link
+دریافت لینک گروه شما
 
 !owner
-returns group owner id
+دریافت آی دی ادمین اصلی گروه
 
 !setowner [id]
-Will set id as owner
+تنظیم کردن فردی به عنوان ادمین اصلی
 
 !setflood [value]
-Set [value] as flood sensitivity
+تنظیم تعداد پیام برای حذف فردی که اسپم میدهد
 
 !stats
-Simple message statistics
+آمار پیام متنی کاربران
 
 !save [value] <text>
 Save <text> as [value]
